@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+
+<Style name="race" filter-mode="first">
+  <Rule>
+    <Filter>([nhwhitepct] &gt; 0.65)</Filter>
+    <PolygonSymbolizer fill="#4a1486" />
+  </Rule>
+  <Rule>
+    <Filter>([nhwhitepct] &gt; 0.5)</Filter>
+    <PolygonSymbolizer fill="#6a51a3" />
+  </Rule>
+  <Rule>
+    <Filter>([nhblackpct] &gt; 0.65)</Filter>
+    <PolygonSymbolizer fill="#005a32" />
+  </Rule>
+  <Rule>
+    <Filter>([nhblackpct] &gt; 0.5)</Filter>
+    <PolygonSymbolizer fill="#238b45" />
+  </Rule>
+  <Rule>
+    <Filter>([hisppct] &gt; 0.65)</Filter>
+    <PolygonSymbolizer fill="#f16913" />
+  </Rule>
+  <Rule>
+    <Filter>([hisppct] &gt; 0.5)</Filter>
+    <PolygonSymbolizer fill="#fdae6b" />
+  </Rule>
+  <Rule>
+    <Filter>([nhasianpct] &gt; 0.65)</Filter>
+    <PolygonSymbolizer fill="#ff496c" />
+  </Rule>
+  <Rule>
+    <PolygonSymbolizer fill="#cccccc" />
+  </Rule>
+</Style>
+<Layer
+      name="race"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>race</StyleName>
+    <Datasource>
+       <Parameter name="table"><![CDATA[race_shapes]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[tylercensus]]></Parameter>
+       <Parameter name="user"><![CDATA[sk]]></Parameter>
+       <Parameter name="id"><![CDATA[race]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="project"><![CDATA[tyler-census-race]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
