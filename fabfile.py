@@ -173,7 +173,7 @@ def mbtiles():
     with settings(warn_only=True):
         local('rm -rf %(map)s/*.mbtiles' % env)
 
-    local('%(tilemill_path)s/node %(tilemill_path)s/index.js export --minzoom=%(min-zoom)s --maxzoom=%(max-zoom)s --bbox=%(min-longitude)s,%(min-latitude)s,%(max-longitude)s,%(max-latitude)s %(map)s %(map)s/%(map)s.mbtiles' % env)
+    local('/usr/bin/node %(tilemill_path)s/index.js export --minzoom=%(min-zoom)s --maxzoom=%(max-zoom)s --bbox=%(min-longitude)s,%(min-latitude)s,%(max-longitude)s,%(max-latitude)s %(map)s %(map)s/%(map)s.mbtiles' % env)
 
 def grid():
     """
@@ -181,12 +181,12 @@ def grid():
     """
     require('map', provided_by=[map])
 
-    mbtiles()
+    #mbtiles()
     
     with settings(warn_only=True):
         local('rm -rf %(map)s/tiles' % env)
 
-    local('mb-util %(map)s/%(map)s.mbtiles %(map)s/tmp-tiles' % env)
+    local('~/src/mbutil/mb-util --scheme=osm %(map)s/%(map)s.mbtiles %(map)s/tmp-tiles' % env)
     local('mv %(map)s/tmp-tiles/1.0.0/%(map)s %(map)s/tiles' % env)
     local('rm -rf %(map)s/tmp-tiles' % env)
 

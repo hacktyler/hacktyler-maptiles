@@ -3,6 +3,7 @@ Map {
 }
 
 #race {
+  polygon-opacity: 0.7;
   polygon-fill: #CCC;
   [nhasianpct > 0.65] {polygon-fill:#CE1256;}
   [nhasianpct > 0.65] {polygon-fill:#FF496C;}

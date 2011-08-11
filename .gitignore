@@ -2,3 +2,5 @@ tl_2010_48423_tabblock10
 *.swp
 *.pyc
 build
+tiles
+*.mbtiles

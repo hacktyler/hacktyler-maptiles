@@ -6,34 +6,34 @@
 <Style name="race" filter-mode="first">
   <Rule>
     <Filter>([nhwhitepct] &gt; 0.65)</Filter>
-    <PolygonSymbolizer fill="#4a1486" />
+    <PolygonSymbolizer fill="#4a1486" fill-opacity="0.7" />
   </Rule>
   <Rule>
     <Filter>([nhwhitepct] &gt; 0.5)</Filter>
-    <PolygonSymbolizer fill="#6a51a3" />
+    <PolygonSymbolizer fill="#6a51a3" fill-opacity="0.7" />
   </Rule>
   <Rule>
     <Filter>([nhblackpct] &gt; 0.65)</Filter>
-    <PolygonSymbolizer fill="#005a32" />
+    <PolygonSymbolizer fill="#005a32" fill-opacity="0.7" />
   </Rule>
   <Rule>
     <Filter>([nhblackpct] &gt; 0.5)</Filter>
-    <PolygonSymbolizer fill="#238b45" />
+    <PolygonSymbolizer fill="#238b45" fill-opacity="0.7" />
   </Rule>
   <Rule>
     <Filter>([hisppct] &gt; 0.65)</Filter>
-    <PolygonSymbolizer fill="#f16913" />
+    <PolygonSymbolizer fill="#f16913" fill-opacity="0.7" />
   </Rule>
   <Rule>
     <Filter>([hisppct] &gt; 0.5)</Filter>
-    <PolygonSymbolizer fill="#fdae6b" />
+    <PolygonSymbolizer fill="#fdae6b" fill-opacity="0.7" />
   </Rule>
   <Rule>
     <Filter>([nhasianpct] &gt; 0.65)</Filter>
-    <PolygonSymbolizer fill="#ff496c" />
+    <PolygonSymbolizer fill="#ff496c" fill-opacity="0.7" />
   </Rule>
   <Rule>
-    <PolygonSymbolizer fill="#cccccc" />
+    <PolygonSymbolizer fill-opacity="0.7" fill="#cccccc" />
   </Rule>
 </Style>
 <Layer

@@ -39,9 +39,13 @@ RACE='
 CREATE TABLE race AS
 SELECT
     geoid,
+    "D003" as nhwhite,
     "D003"::float / NULLIF("D001"::float, 0) AS nhwhitepct,
+    "D004" as nhblack,
     "D004"::float / NULLIF("D001"::float, 0) AS nhblackpct,
+    "D006" as nhasian,
     "D006"::float / NULLIF("D001"::float, 0) AS nhasianpct,
+    "D010" as hisp,
     "D010"::float / NULLIF("D001"::float, 0) AS hisppct
 FROM p5;
 '
