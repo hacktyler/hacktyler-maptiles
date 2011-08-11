@@ -8,8 +8,17 @@ import yaml
 Base configuration
 """
 env.project_name = 'census'
-env.tilemill_path = '/usr/share/tilemill'
-env.tilemill_projects = '/usr/share/mapbox/project'
+
+# Ubuntu
+if os.path.exists('/usr/share/tilemill'):
+    env.tilemill_path = '/usr/share/tilemill'
+    env.tilemill_projects = '/usr/share/mapbox/project'
+    env.node_path = '/usr/bin/node'
+# OSX
+else:
+    env.tilemill_path = '/Applications/TileMill.app/Contents/Resources'
+    env.tilemill_projects = '~/Documents/MapBox/project'
+    env.node_path = '%(tilemill_path)s/node' % env
 
 """
 Environments
@@ -75,6 +84,9 @@ def _update_config_from_project():
     Copy the latest configuration to TileMill from the local directory.
     """
     # Copy the latest configuration to TileMill
+    if not os.path.exists('%(tilemill_projects)s/%(map)s/' % env):
+        os.mkdir(os.path.expanduser('%(tilemill_projects)s/%(map)s/' % env))
+
     local('cp %(map)s/*.mss %(tilemill_projects)s/%(map)s/' % env)
     local('cp %(map)s/*.mml %(tilemill_projects)s/%(map)s/' % env)
     
@@ -173,7 +185,7 @@ def mbtiles():
     with settings(warn_only=True):
         local('rm -rf %(map)s/*.mbtiles' % env)
 
-    local('/usr/bin/node %(tilemill_path)s/index.js export --minzoom=%(min-zoom)s --maxzoom=%(max-zoom)s --bbox=%(min-longitude)s,%(min-latitude)s,%(max-longitude)s,%(max-latitude)s %(map)s %(map)s/%(map)s.mbtiles' % env)
+    local('%(node_path)s %(tilemill_path)s/index.js export --minzoom=%(min-zoom)s --maxzoom=%(max-zoom)s --bbox=%(min-longitude)s,%(min-latitude)s,%(max-longitude)s,%(max-latitude)s %(map)s %(map)s/%(map)s.mbtiles' % env)
 
 def grid():
     """

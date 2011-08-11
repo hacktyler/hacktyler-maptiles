@@ -10,5 +10,5 @@ def get_data(feature):
         'nhwhite': feature.GetFieldAsInteger(feature.GetFieldIndex('nhwhite'))
     }
 
-dots = DotDensityPlotter('PG:dbname=tylercensus host=localhost', 'race_shapes', 'PostgreSQL', 'PG:dbname=tylercensus host=localhost', 'race_dots', get_data, 10)
+dots = DotDensityPlotter('PG:dbname=tylercensus host=localhost', 'race_shapes', 'PostgreSQL', 'PG:dbname=tylercensus host=localhost', 'race_dots', get_data, 1)
 dots.plot()

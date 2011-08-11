@@ -1,13 +1,13 @@
 {
   "bounds": [
-    -95.4,
-    32.2,
-    -95.2,
-    32.4
+    -95.6,
+    32.1,
+    -94.9,
+    32.7
   ],
   "center": [
-    -95.31266212463377,
-    32.32710421338942,
+    -95.38415908813467,
+    32.344219132639346,
     12
   ],
   "format": "png",
@@ -20,19 +20,53 @@
   ],
   "Layer": [
     {
-      "id": "race",
-      "name": "race",
+      "geometry": "point",
+      "id": "dots",
+      "name": "dots",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "class": "",
       "Datasource": {
-        "table": "race_shapes",
+        "table": "race_dots",
         "key_field": "",
         "geometry_field": "wkb_geometry",
         "extent": "",
         "type": "postgis",
         "dbname": "tylercensus",
-        "user": "sk",
-        "id": "race",
+        "id": "dots",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "project": "tyler-census-race"
+      }
+    },
+    {
+      "id": "tyler",
+      "name": "tyler",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "tyler2010",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "tylercensus",
+        "id": "tyler",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+        "project": "tyler-census-race"
+      }
+    },
+    {
+      "id": "smith",
+      "name": "smith",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "smith2010",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "extent": "",
+        "type": "postgis",
+        "dbname": "tylercensus",
+        "id": "smith",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
         "project": "tyler-census-race"
       }

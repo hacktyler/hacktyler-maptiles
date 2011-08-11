@@ -3,6 +3,10 @@ DATABASE=tylercensus
 
 ogr2ogr -f "PostgreSQL" PG:dbname=$DATABASE -nln blocks2010 -nlt multipolygon -t_srs EPSG:900913 -overwrite tl_2010_48423_tabblock10
 
+ogr2ogr -f "PostgreSQL" PG:dbname=$DATABASE -nln tyler2010 -nlt multipolygon -t_srs EPSG:900913 -overwrite tyler
+
+ogr2ogr -f "PostgreSQL" PG:dbname=$DATABASE -nln smith2010 -nlt multipolygon -t_srs EPSG:900913 -overwrite smith
+
 psql -q $DATABASE -c "DROP TABLE p5;"
 
 CREATE_P5='
@@ -31,7 +35,7 @@ CREATE TABLE p5 (
 '
 echo $CREATE_P5 | psql $DATABASE
 
-psql -q $DATABASE -c "COPY p5 FROM '${HERE}/p5/clean.csv' WITH CSV HEADER;"
+psql -q $DATABASE -c "COPY p5 FROM '${HERE}/p5_county/clean.csv' WITH CSV HEADER;"
 
 psql -q $DATABASE -c "DROP TABLE race;"
 

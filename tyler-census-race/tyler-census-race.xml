@@ -3,52 +3,286 @@
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
 
 
-<Style name="race" filter-mode="first">
+<Style name="dots" filter-mode="first">
   <Rule>
-    <Filter>([nhwhitepct] &gt; 0.65)</Filter>
-    <PolygonSymbolizer fill="#4a1486" fill-opacity="0.7" />
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([group] = 'nhwhite')</Filter>
+    <MarkersSymbolizer height="2" opacity="0.8" fill="#7366bd" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
-    <Filter>([nhwhitepct] &gt; 0.5)</Filter>
-    <PolygonSymbolizer fill="#6a51a3" fill-opacity="0.7" />
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([group] = 'nhwhite')</Filter>
+    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#7366bd" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
-    <Filter>([nhblackpct] &gt; 0.65)</Filter>
-    <PolygonSymbolizer fill="#005a32" fill-opacity="0.7" />
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([group] = 'nhwhite')</Filter>
+    <MarkersSymbolizer height="1" opacity="0.8" fill="#7366bd" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
-    <Filter>([nhblackpct] &gt; 0.5)</Filter>
-    <PolygonSymbolizer fill="#238b45" fill-opacity="0.7" />
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([group] = 'nhwhite')</Filter>
+    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#7366bd" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
-    <Filter>([hisppct] &gt; 0.65)</Filter>
-    <PolygonSymbolizer fill="#f16913" fill-opacity="0.7" />
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([group] = 'nhwhite')</Filter>
+    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#7366bd" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
-    <Filter>([hisppct] &gt; 0.5)</Filter>
-    <PolygonSymbolizer fill="#fdae6b" fill-opacity="0.7" />
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([group] = 'nhwhite')</Filter>
+    <MarkersSymbolizer height="0.3" fill="#7366bd" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
-    <Filter>([nhasianpct] &gt; 0.65)</Filter>
-    <PolygonSymbolizer fill="#ff496c" fill-opacity="0.7" />
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([group] = 'nhwhite')</Filter>
+    <MarkersSymbolizer height="0.2" fill="#7366bd" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
-    <PolygonSymbolizer fill-opacity="0.7" fill="#cccccc" />
+    <Filter>([group] = 'nhwhite')</Filter>
+    <MarkersSymbolizer fill="#7366bd" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([group] = 'hisp')</Filter>
+    <MarkersSymbolizer height="2" opacity="0.8" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([group] = 'hisp')</Filter>
+    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([group] = 'hisp')</Filter>
+    <MarkersSymbolizer height="1" opacity="0.8" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([group] = 'hisp')</Filter>
+    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([group] = 'hisp')</Filter>
+    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([group] = 'hisp')</Filter>
+    <MarkersSymbolizer height="0.3" fill="#ffcf48" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([group] = 'hisp')</Filter>
+    <MarkersSymbolizer height="0.2" fill="#ffcf48" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([group] = 'hisp')</Filter>
+    <MarkersSymbolizer fill="#ffcf48" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([group] = 'nhblack')</Filter>
+    <MarkersSymbolizer height="2" opacity="0.8" fill="#76ff7a" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([group] = 'nhblack')</Filter>
+    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#76ff7a" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([group] = 'nhblack')</Filter>
+    <MarkersSymbolizer height="1" opacity="0.8" fill="#76ff7a" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([group] = 'nhblack')</Filter>
+    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#76ff7a" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([group] = 'nhblack')</Filter>
+    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#76ff7a" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([group] = 'nhblack')</Filter>
+    <MarkersSymbolizer height="0.3" fill="#76ff7a" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([group] = 'nhblack')</Filter>
+    <MarkersSymbolizer height="0.2" fill="#76ff7a" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([group] = 'nhblack')</Filter>
+    <MarkersSymbolizer fill="#76ff7a" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([group] = 'nhasian')</Filter>
+    <MarkersSymbolizer height="2" opacity="0.8" fill="#ff496c" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([group] = 'nhasian')</Filter>
+    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#ff496c" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([group] = 'nhasian')</Filter>
+    <MarkersSymbolizer height="1" opacity="0.8" fill="#ff496c" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([group] = 'nhasian')</Filter>
+    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#ff496c" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([group] = 'nhasian')</Filter>
+    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#ff496c" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([group] = 'nhasian')</Filter>
+    <MarkersSymbolizer height="0.3" fill="#ff496c" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([group] = 'nhasian')</Filter>
+    <MarkersSymbolizer height="0.2" fill="#ff496c" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([group] = 'nhasian')</Filter>
+    <MarkersSymbolizer fill="#ff496c" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <MarkersSymbolizer height="2" opacity="0.8" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <MarkersSymbolizer height="1" opacity="0.8" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <MarkersSymbolizer height="0.3" fill="#ff0000" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <MarkersSymbolizer height="0.2" fill="#ff0000" stroke-width="0" allow-overlap="true" opacity="1" />
+  </Rule>
+  <Rule>
+    <MarkersSymbolizer fill="#ff0000" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
 </Style>
 <Layer
-      name="race"
+      name="dots"
    srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>race</StyleName>
+    <StyleName>dots</StyleName>
     <Datasource>
-       <Parameter name="table"><![CDATA[race_shapes]]></Parameter>
+       <Parameter name="table"><![CDATA[race_dots]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
        <Parameter name="extent"><![CDATA[]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="dbname"><![CDATA[tylercensus]]></Parameter>
-       <Parameter name="user"><![CDATA[sk]]></Parameter>
-       <Parameter name="id"><![CDATA[race]]></Parameter>
+       <Parameter name="id"><![CDATA[dots]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="project"><![CDATA[tyler-census-race]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="tyler" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#2b8cbe" stroke-width="2.5" stroke-opacity="0.8" />
+  </Rule>
+</Style>
+<Layer
+      name="tyler"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>tyler</StyleName>
+    <Datasource>
+       <Parameter name="table"><![CDATA[tyler2010]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[tylercensus]]></Parameter>
+       <Parameter name="id"><![CDATA[tyler]]></Parameter>
+       <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
+       <Parameter name="project"><![CDATA[tyler-census-race]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="smith" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#ffcfab" stroke-width="2.5" stroke-opacity="0.3" />
+  </Rule>
+</Style>
+<Layer
+      name="smith"
+   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>smith</StyleName>
+    <Datasource>
+       <Parameter name="table"><![CDATA[smith2010]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[tylercensus]]></Parameter>
+       <Parameter name="id"><![CDATA[smith]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
        <Parameter name="project"><![CDATA[tyler-census-race]]></Parameter>
     </Datasource>
