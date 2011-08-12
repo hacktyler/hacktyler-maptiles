@@ -7,7 +7,7 @@ import yaml
 """
 Base configuration
 """
-env.project_name = 'census'
+env.project_name = 'maptiles'
 
 # Ubuntu
 if os.path.exists('/usr/share/tilemill'):
