@@ -3,9 +3,8 @@ Map {
 }
 
 #tyler {
-  line-color: #791f1f;
+  line-color: black;
   line-width: 4;
-  line-opacity: 0.5;
     
   [zoom=17] { line-width: 7; }
   [zoom=16] { line-width: 6; }
@@ -44,7 +43,7 @@ Map {
   line-width: 5;
   line-join: round;
   line-cap: square;
-  line-opacity: 0.7;
+  line-opacity: 0.8;
   
   [zoom=17] { line-width: 5; line-dasharray: 5,10; }
   [zoom=16] { line-width: 4; line-dasharray: 4,8; }
@@ -101,7 +100,7 @@ Map {
 #bus_stops {
   marker-width: 5;
   marker-fill: red;
-  marker-line-color: white;
+  marker-line-color: #555;
   marker-line-width: 1;
   marker-allow-overlap: true;
   

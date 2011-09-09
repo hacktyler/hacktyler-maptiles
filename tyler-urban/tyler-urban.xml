@@ -270,114 +270,114 @@
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([route_lane] = 'LANE')</Filter>
-    <LineSymbolizer stroke="#dd00ff" stroke-width="2" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#dd00ff" stroke-width="2" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([route_lane] = 'LANE')</Filter>
-    <LineSymbolizer stroke="#dd00ff" stroke-width="2.5" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#dd00ff" stroke-width="2.5" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([route_lane] = 'LANE')</Filter>
-    <LineSymbolizer stroke="#dd00ff" stroke-width="3" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#dd00ff" stroke-width="3" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([route_lane] = 'LANE')</Filter>
-    <LineSymbolizer stroke="#dd00ff" stroke-width="3.5" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#dd00ff" stroke-width="3.5" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([route_lane] = 'LANE')</Filter>
-    <LineSymbolizer stroke="#dd00ff" stroke-width="4" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#dd00ff" stroke-width="4" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([route_lane] = 'LANE')</Filter>
-    <LineSymbolizer stroke="#dd00ff" stroke-width="5" stroke-dasharray="5, 10" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#dd00ff" stroke-width="5" stroke-dasharray="5, 10" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <Filter>([route_lane] = 'LANE')</Filter>
-    <LineSymbolizer stroke="#dd00ff" stroke-width="5" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#dd00ff" stroke-width="5" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([route_lane] = 'ROUTE')</Filter>
-    <LineSymbolizer stroke="#4f4fc9" stroke-width="2" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#4f4fc9" stroke-width="2" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([route_lane] = 'ROUTE')</Filter>
-    <LineSymbolizer stroke="#4f4fc9" stroke-width="2.5" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#4f4fc9" stroke-width="2.5" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([route_lane] = 'ROUTE')</Filter>
-    <LineSymbolizer stroke="#4f4fc9" stroke-width="3" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#4f4fc9" stroke-width="3" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([route_lane] = 'ROUTE')</Filter>
-    <LineSymbolizer stroke="#4f4fc9" stroke-width="3.5" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#4f4fc9" stroke-width="3.5" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([route_lane] = 'ROUTE')</Filter>
-    <LineSymbolizer stroke="#4f4fc9" stroke-width="4" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#4f4fc9" stroke-width="4" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([route_lane] = 'ROUTE')</Filter>
-    <LineSymbolizer stroke="#4f4fc9" stroke-width="5" stroke-dasharray="5, 10" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#4f4fc9" stroke-width="5" stroke-dasharray="5, 10" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <Filter>([route_lane] = 'ROUTE')</Filter>
-    <LineSymbolizer stroke="#4f4fc9" stroke-width="5" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke="#4f4fc9" stroke-width="5" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke-width="2.5" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="3" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke-width="3" stroke-dasharray="3, 6" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="4" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke-width="4" stroke-dasharray="4, 8" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="5" stroke-dasharray="5, 10" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke-width="5" stroke-dasharray="5, 10" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
   <Rule>
-    <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.7" />
+    <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
 </Style>
 <Layer
@@ -402,35 +402,35 @@
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#791f1f" stroke-opacity="0.5" />
+    <LineSymbolizer stroke-width="2" stroke="#000000" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="3" stroke="#791f1f" stroke-opacity="0.5" />
+    <LineSymbolizer stroke-width="3" stroke="#000000" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="4" stroke="#791f1f" stroke-opacity="0.5" />
+    <LineSymbolizer stroke-width="4" stroke="#000000" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="5" stroke="#791f1f" stroke-opacity="0.5" />
+    <LineSymbolizer stroke-width="5" stroke="#000000" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="6" stroke="#791f1f" stroke-opacity="0.5" />
+    <LineSymbolizer stroke-width="6" stroke="#000000" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="7" stroke="#791f1f" stroke-opacity="0.5" />
+    <LineSymbolizer stroke-width="7" stroke="#000000" />
   </Rule>
   <Rule>
-    <LineSymbolizer stroke="#791f1f" stroke-width="4" stroke-opacity="0.5" />
+    <LineSymbolizer stroke="#000000" stroke-width="4" />
   </Rule>
 </Style>
 <Layer
@@ -454,194 +454,194 @@
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([color] = 'Yellow')</Filter>
-    <MarkersSymbolizer width="0" fill="#ffff00" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#ffff00" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([color] = 'Yellow')</Filter>
-    <MarkersSymbolizer width="0" fill="#ffff00" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#ffff00" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([color] = 'Yellow')</Filter>
-    <MarkersSymbolizer width="2.5" fill="#ffff00" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="2.5" fill="#ffff00" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([color] = 'Yellow')</Filter>
-    <MarkersSymbolizer width="3" fill="#ffff00" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="3" fill="#ffff00" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([color] = 'Yellow')</Filter>
-    <MarkersSymbolizer width="4" fill="#ffff00" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="4" fill="#ffff00" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([color] = 'Yellow')</Filter>
-    <MarkersSymbolizer width="5" fill="#ffff00" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="5" fill="#ffff00" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <Filter>([color] = 'Yellow')</Filter>
-    <MarkersSymbolizer fill="#ffff00" width="5" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ffff00" width="5" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([color] = 'Blue')</Filter>
-    <MarkersSymbolizer width="0" fill="#0000ff" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#0000ff" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([color] = 'Blue')</Filter>
-    <MarkersSymbolizer width="0" fill="#0000ff" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#0000ff" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([color] = 'Blue')</Filter>
-    <MarkersSymbolizer width="2.5" fill="#0000ff" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="2.5" fill="#0000ff" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([color] = 'Blue')</Filter>
-    <MarkersSymbolizer width="3" fill="#0000ff" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="3" fill="#0000ff" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([color] = 'Blue')</Filter>
-    <MarkersSymbolizer width="4" fill="#0000ff" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="4" fill="#0000ff" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([color] = 'Blue')</Filter>
-    <MarkersSymbolizer width="5" fill="#0000ff" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="5" fill="#0000ff" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <Filter>([color] = 'Blue')</Filter>
-    <MarkersSymbolizer fill="#0000ff" width="5" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer fill="#0000ff" width="5" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([color] = 'Green')</Filter>
-    <MarkersSymbolizer width="0" fill="#008000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#008000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([color] = 'Green')</Filter>
-    <MarkersSymbolizer width="0" fill="#008000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#008000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([color] = 'Green')</Filter>
-    <MarkersSymbolizer width="2.5" fill="#008000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="2.5" fill="#008000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([color] = 'Green')</Filter>
-    <MarkersSymbolizer width="3" fill="#008000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="3" fill="#008000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([color] = 'Green')</Filter>
-    <MarkersSymbolizer width="4" fill="#008000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="4" fill="#008000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([color] = 'Green')</Filter>
-    <MarkersSymbolizer width="5" fill="#008000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="5" fill="#008000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <Filter>([color] = 'Green')</Filter>
-    <MarkersSymbolizer fill="#008000" width="5" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer fill="#008000" width="5" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([color] = 'Red')</Filter>
-    <MarkersSymbolizer width="0" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([color] = 'Red')</Filter>
-    <MarkersSymbolizer width="0" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([color] = 'Red')</Filter>
-    <MarkersSymbolizer width="2.5" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="2.5" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([color] = 'Red')</Filter>
-    <MarkersSymbolizer width="3" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="3" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([color] = 'Red')</Filter>
-    <MarkersSymbolizer width="4" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="4" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([color] = 'Red')</Filter>
-    <MarkersSymbolizer width="5" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="5" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <Filter>([color] = 'Red')</Filter>
-    <MarkersSymbolizer fill="#ff0000" width="5" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer fill="#ff0000" width="5" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <MarkersSymbolizer width="0" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <MarkersSymbolizer width="0" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="0" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <MarkersSymbolizer width="2.5" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="2.5" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <MarkersSymbolizer width="3" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="3" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <MarkersSymbolizer width="4" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="4" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <MarkersSymbolizer width="5" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="5" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
   <Rule>
-    <MarkersSymbolizer width="5" fill="#ff0000" stroke="#ffffff" stroke-width="1" allow-overlap="true" />
+    <MarkersSymbolizer width="5" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
 </Style>
 <Layer

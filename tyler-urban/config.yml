@@ -1,0 +1,7 @@
+min-latitude: 32.2
+max-latitude: 32.5
+min-longitude: -95.5
+max-longitude: -95.1
+min-zoom: 12
+max-zoom: 16
+buffer: 128 
