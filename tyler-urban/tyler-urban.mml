@@ -1,0 +1,144 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    -95.29576689004861,
+    32.324838827646175,
+    14
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "name": "parks",
+      "id": "parks",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "parks",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "user": "onyxfish",
+        "dbname": "hacktyler-urban"
+      }
+    },
+    {
+      "name": "structures",
+      "id": "structures",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "structures",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "user": "onyxfish",
+        "dbname": "hacktyler-urban",
+        "id": "structures",
+        "project": "hacktyler-urban"
+      }
+    },
+    {
+      "name": "tiger_lines",
+      "id": "tiger_lines",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "tiger_lines",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "user": "onyxfish",
+        "dbname": "hacktyler-urban",
+        "id": "tiger_lines",
+        "project": "hacktyler-urban"
+      }
+    },
+    {
+      "name": "sidewalks",
+      "id": "sidewalks",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "sidewalks",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "user": "onyxfish",
+        "dbname": "hacktyler-urban"
+      }
+    },
+    {
+      "name": "bike_routes",
+      "id": "bike_routes",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "bike_routes",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "user": "onyxfish",
+        "dbname": "hacktyler-urban",
+        "id": "bike_routes",
+        "project": "hacktyler-urban"
+      }
+    },
+    {
+      "name": "tyler",
+      "id": "tyler",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "tyler",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "user": "onyxfish",
+        "dbname": "hacktyler-urban"
+      }
+    },
+    {
+      "geometry": "point",
+      "name": "bus_stops",
+      "id": "bus_stops",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "bus_stops",
+        "key_field": "",
+        "geometry_field": "",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "user": "onyxfish",
+        "dbname": "hacktyler-urban",
+        "id": "bus_stops",
+        "project": "hacktyler-urban"
+      }
+    }
+  ]
+}
