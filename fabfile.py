@@ -110,7 +110,7 @@ def _carto_to_mapnik():
     Convert carto styles to mapnik configuration.
     """
     # Convert tilemill config to mapnik config
-    local('%(tilemill_path)s/node_modules/carto/bin/carto %(map)s/%(map)s.mml > %(map)s/%(map)s.xml' % env)
+    local('%(node_path)s %(tilemill_path)s/node_modules/carto/bin/carto %(map)s/%(map)s.mml > %(map)s/%(map)s.xml' % env)
 
     # Remove cruft
     local('rm -rf %(map)s/layers' % env)
