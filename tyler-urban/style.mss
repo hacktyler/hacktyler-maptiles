@@ -3,18 +3,40 @@ Map {
 }
 
 #tyler {
-  line-color: black;
-  line-width: 4;
+  line-color: #000000;
+  line-opacity: 1;
     
-  [zoom=17] { line-width: 7; }
-  [zoom=16] { line-width: 6; }
-  [zoom=15] { line-width: 5; }
-  [zoom=14] { line-width: 4; }
-  [zoom=13] { line-width: 3; }
+  [zoom=17] { line-width: 2; }
+  [zoom=16] { line-width: 2; }
+  [zoom=15] { line-width: 2; }
+  [zoom=14] { line-width: 2; }
+  [zoom=13] { line-width: 2; }
   [zoom=12] { line-width: 2; }
 }
 
-#parks {
+/*#schools {
+  polygon-fill: #c68e7b;
+}*/
+
+#interact {
+  [type='park'] {
+    polygon-fill: #47b347;
+    line-color: #117d11;
+    
+    [zoom=17] { line-width: 1.25; }
+    [zoom=16] { line-width: 1; }
+    [zoom=15] { line-width: 0.5; }
+    [zoom=14] { line-width: 0.25; }
+    [zoom=13] { line-width: 0.25; }
+    [zoom=12] { line-width: 0.25; }
+  }
+  
+  [type='school'] {
+    polygon-fill: #c68e7b;
+  }
+}
+
+/*#parks {
   polygon-fill: #47b347;
   line-color: #117d11;
   
@@ -24,7 +46,7 @@ Map {
   [zoom=14] { line-width: 0.25; }
   [zoom=13] { line-width: 0.25; }
   [zoom=12] { line-width: 0.25; }
-}
+}*/
 
 #sidewalks {
   line-color: #9f8e4b;

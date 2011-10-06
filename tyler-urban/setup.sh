@@ -7,3 +7,8 @@ ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=hacktyler-urban user=onyxfish"
 ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=hacktyler-urban user=onyxfish" -nln parks parks -overwrite -nlt multipolygon -t_srs EPSG:900913
 ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=hacktyler-urban user=onyxfish" -nln tyler city_limits -overwrite -nlt multipolygon -t_srs EPSG:900913
 ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=hacktyler-urban user=onyxfish" -nln bus_stops bus-stops -overwrite -nlt point -t_srs EPSG:900913
+ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=hacktyler-urban user=onyxfish" -nln schools schools -overwrite -nlt multipolygon -t_srs EPSG:900913
+
+ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=hacktyler-urban user=onyxfish" -nln interact parks -overwrite -nlt geometry -t_srs EPSG:900913 -sql "select NAME, 'park' as TYPE from Parks"
+ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=hacktyler-urban user=onyxfish" -nln interact schools -append -nlt geometry -t_srs EPSG:900913 -sql "select FACILITY as NAME, 'school' as TYPE from Educational"
+

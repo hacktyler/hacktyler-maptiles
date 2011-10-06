@@ -3,52 +3,9 @@
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#f3efe9">
 
 
-<Style name="parks" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.25" stroke="#117d11" />
-    <PolygonSymbolizer fill="#47b347" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.25" stroke="#117d11" />
-    <PolygonSymbolizer fill="#47b347" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.25" stroke="#117d11" />
-    <PolygonSymbolizer fill="#47b347" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.5" stroke="#117d11" />
-    <PolygonSymbolizer fill="#47b347" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1" stroke="#117d11" />
-    <PolygonSymbolizer fill="#47b347" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1.25" stroke="#117d11" />
-    <PolygonSymbolizer fill="#47b347" />
-  </Rule>
-  <Rule>
-    <PolygonSymbolizer fill="#47b347" />
-    <LineSymbolizer stroke="#117d11" />
-  </Rule>
-</Style>
-<Layer
-      name="parks"
-   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>parks</StyleName>
+<Layer name="parks"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
     <Datasource>
        <Parameter name="table"><![CDATA[parks]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -58,6 +15,91 @@
        <Parameter name="host"><![CDATA[localhost]]></Parameter>
        <Parameter name="user"><![CDATA[onyxfish]]></Parameter>
        <Parameter name="dbname"><![CDATA[hacktyler-urban]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="schools"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="table"><![CDATA[schools]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[hacktyler-urban]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="user"><![CDATA[onyxfish]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="interact" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([type] = 'park')</Filter>
+    <PolygonSymbolizer fill="#47b347" />
+    <LineSymbolizer stroke-width="0.25" stroke="#117d11" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([type] = 'park')</Filter>
+    <PolygonSymbolizer fill="#47b347" />
+    <LineSymbolizer stroke-width="0.25" stroke="#117d11" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([type] = 'park')</Filter>
+    <PolygonSymbolizer fill="#47b347" />
+    <LineSymbolizer stroke-width="0.25" stroke="#117d11" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([type] = 'park')</Filter>
+    <PolygonSymbolizer fill="#47b347" />
+    <LineSymbolizer stroke-width="0.5" stroke="#117d11" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([type] = 'park')</Filter>
+    <PolygonSymbolizer fill="#47b347" />
+    <LineSymbolizer stroke-width="1" stroke="#117d11" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([type] = 'park')</Filter>
+    <PolygonSymbolizer fill="#47b347" />
+    <LineSymbolizer stroke-width="1.25" stroke="#117d11" />
+  </Rule>
+  <Rule>
+    <Filter>([type] = 'park')</Filter>
+    <PolygonSymbolizer fill="#47b347" />
+    <LineSymbolizer stroke="#117d11" />
+  </Rule>
+  <Rule>
+    <Filter>([type] = 'school')</Filter>
+    <PolygonSymbolizer fill="#c68e7b" />
+  </Rule>
+</Style>
+<Layer name="interact"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>interact</StyleName>
+    <Datasource>
+       <Parameter name="table"><![CDATA[interact]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="user"><![CDATA[onyxfish]]></Parameter>
+       <Parameter name="dbname"><![CDATA[hacktyler-urban]]></Parameter>
+       <Parameter name="id"><![CDATA[interact]]></Parameter>
+       <Parameter name="project"><![CDATA[tyler-urban]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -96,9 +138,8 @@
     <BuildingSymbolizer fill="#eceade" height="2" />
   </Rule>
 </Style>
-<Layer
-      name="structures"
-   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+<Layer name="structures"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>structures</StyleName>
     <Datasource>
        <Parameter name="table"><![CDATA[structures]]></Parameter>
@@ -196,9 +237,8 @@
     <LineSymbolizer stroke="#a7a7a7" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
-<Layer
-      name="tiger_lines"
-   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+<Layer name="tiger_lines"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>tiger_lines</StyleName>
     <Datasource>
        <Parameter name="table"><![CDATA[tiger_lines]]></Parameter>
@@ -249,9 +289,8 @@
     <LineSymbolizer stroke="#9f8e4b" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
-<Layer
-      name="sidewalks"
-   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+<Layer name="sidewalks"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>sidewalks</StyleName>
     <Datasource>
        <Parameter name="table"><![CDATA[sidewalks]]></Parameter>
@@ -380,9 +419,8 @@
     <LineSymbolizer stroke-width="5" stroke-linejoin="round" stroke-linecap="square" stroke-opacity="0.8" />
   </Rule>
 </Style>
-<Layer
-      name="bike_routes"
-   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+<Layer name="bike_routes"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>bike_routes</StyleName>
     <Datasource>
        <Parameter name="table"><![CDATA[bike_routes]]></Parameter>
@@ -402,40 +440,39 @@
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#000000" />
+    <LineSymbolizer stroke-width="2" stroke="#000000" stroke-opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="3" stroke="#000000" />
+    <LineSymbolizer stroke-width="2" stroke="#000000" stroke-opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="4" stroke="#000000" />
+    <LineSymbolizer stroke-width="2" stroke="#000000" stroke-opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="5" stroke="#000000" />
+    <LineSymbolizer stroke-width="2" stroke="#000000" stroke-opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="6" stroke="#000000" />
+    <LineSymbolizer stroke-width="2" stroke="#000000" stroke-opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="7" stroke="#000000" />
+    <LineSymbolizer stroke-width="2" stroke="#000000" stroke-opacity="1" />
   </Rule>
   <Rule>
-    <LineSymbolizer stroke="#000000" stroke-width="4" />
+    <LineSymbolizer stroke="#000000" stroke-opacity="1" />
   </Rule>
 </Style>
-<Layer
-      name="tyler"
-   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+<Layer name="tyler"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>tyler</StyleName>
     <Datasource>
        <Parameter name="table"><![CDATA[tyler]]></Parameter>
@@ -644,9 +681,8 @@
     <MarkersSymbolizer width="5" fill="#ff0000" stroke="#555555" stroke-width="1" allow-overlap="true" />
   </Rule>
 </Style>
-<Layer
-      name="bus_stops"
-   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+<Layer name="bus_stops"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>bus_stops</StyleName>
     <Datasource>
        <Parameter name="table"><![CDATA[bus_stops]]></Parameter>
@@ -658,7 +694,24 @@
        <Parameter name="user"><![CDATA[onyxfish]]></Parameter>
        <Parameter name="dbname"><![CDATA[hacktyler-urban]]></Parameter>
        <Parameter name="id"><![CDATA[bus_stops]]></Parameter>
-       <Parameter name="project"><![CDATA[hacktyler-urban]]></Parameter>
+       <Parameter name="project"><![CDATA[tyler-urban]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="tiger_lines_labels"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="table"><![CDATA[tiger_lines]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[hacktyler-urban]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="user"><![CDATA[onyxfish]]></Parameter>
+       <Parameter name="id"><![CDATA[tiger_lines_labels]]></Parameter>
+       <Parameter name="project"><![CDATA[tyler-urban]]></Parameter>
     </Datasource>
   </Layer>
 
