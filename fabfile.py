@@ -96,7 +96,7 @@ def _rewrite_paths():
     """
     contents = None 
 
-    with open('%(map)s/%(map)s.mml' % env, 'r') as f:
+    with open('%(map)s/project.mml' % env, 'r') as f:
         contents = f.read()
 
     shapefile_path = os.path.join('..', 'shapefiles')

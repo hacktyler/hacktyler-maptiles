@@ -1,0 +1,111 @@
+{
+  "bounds": [
+    -95.6,
+    32.1,
+    -94.9,
+    32.7
+  ],
+  "center": [
+    -95.3148508071898,
+    32.28662471327077,
+    15
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 11,
+  "maxzoom": 15,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "name": "water",
+      "id": "water",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "water",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "dbname": "tylercensus"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "name": "tiger_lines",
+      "id": "tiger_lines",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "tiger_lines",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "dbname": "tylercensus",
+        "id": "tiger_lines",
+        "project": "tyler-census-age",
+        "srs": null
+      }
+    },
+    {
+      "name": "age_dots",
+      "id": "age_dots",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "age_dots",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "dbname": "tylercensus",
+        "id": "age_dots",
+        "project": "tyler-census-age",
+        "srs": null
+      }
+    },
+    {
+      "geometry": "polygon",
+      "name": "tyler",
+      "id": "tyler",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "tyler2010",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "dbname": "tylercensus"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "name": "smith",
+      "id": "smith",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "table": "smith2010",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "extent": "",
+        "type": "postgis",
+        "host": "localhost",
+        "dbname": "tylercensus"
+      }
+    }
+  ],
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}
