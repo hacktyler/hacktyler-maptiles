@@ -116,7 +116,7 @@
        <Parameter name="host"><![CDATA[localhost]]></Parameter>
        <Parameter name="dbname"><![CDATA[tylercensus]]></Parameter>
        <Parameter name="id"><![CDATA[tiger_lines]]></Parameter>
-       <Parameter name="project"><![CDATA[tyler-census-age]]></Parameter>
+       <Parameter name="project"><![CDATA[tyler-census-elderly]]></Parameter>
        <Parameter name="srs"><![CDATA[null]]></Parameter>
     </Datasource>
   </Layer>
@@ -126,31 +126,31 @@
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([group] = 'gte65')</Filter>
-    <MarkersSymbolizer height="2" opacity="0.8" fill="#ffffff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="2" fill="#ffffff" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([group] = 'gte65')</Filter>
-    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#ffffff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1.5" fill="#ffffff" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([group] = 'gte65')</Filter>
-    <MarkersSymbolizer height="1" opacity="0.8" fill="#ffffff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1" fill="#ffffff" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([group] = 'gte65')</Filter>
-    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#ffffff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.8" fill="#ffffff" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([group] = 'gte65')</Filter>
-    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#ffffff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.5" fill="#ffffff" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -172,210 +172,210 @@
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([group] = 'under65')</Filter>
-    <MarkersSymbolizer height="2" opacity="0.8" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="2" fill="#ffcf48" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([group] = 'under65')</Filter>
-    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1.5" fill="#ffcf48" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([group] = 'under65')</Filter>
-    <MarkersSymbolizer height="1" opacity="0.8" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1" fill="#ffcf48" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([group] = 'under65')</Filter>
-    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.8" fill="#ffcf48" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([group] = 'under65')</Filter>
-    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#ffcf48" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.5" fill="#ffcf48" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([group] = 'under65')</Filter>
-    <MarkersSymbolizer height="0.3" fill="#ffcf48" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer height="0.3" fill="#ffcf48" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([group] = 'under65')</Filter>
-    <MarkersSymbolizer height="0.2" fill="#ffcf48" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer height="0.2" fill="#ffcf48" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <Filter>([group] = 'under65')</Filter>
-    <MarkersSymbolizer fill="#ffcf48" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer fill="#ffcf48" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([group] = 'under40')</Filter>
-    <MarkersSymbolizer height="2" opacity="0.8" fill="#836643" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="2" fill="#836643" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([group] = 'under40')</Filter>
-    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#836643" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1.5" fill="#836643" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([group] = 'under40')</Filter>
-    <MarkersSymbolizer height="1" opacity="0.8" fill="#836643" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1" fill="#836643" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([group] = 'under40')</Filter>
-    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#836643" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.8" fill="#836643" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([group] = 'under40')</Filter>
-    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#836643" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.5" fill="#836643" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([group] = 'under40')</Filter>
-    <MarkersSymbolizer height="0.3" fill="#836643" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer height="0.3" fill="#836643" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([group] = 'under40')</Filter>
-    <MarkersSymbolizer height="0.2" fill="#836643" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer height="0.2" fill="#836643" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <Filter>([group] = 'under40')</Filter>
-    <MarkersSymbolizer fill="#836643" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer fill="#836643" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([group] = 'under25')</Filter>
-    <MarkersSymbolizer height="2" opacity="0.8" fill="#33aaff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="2" fill="#33aaff" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([group] = 'under25')</Filter>
-    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#33aaff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1.5" fill="#33aaff" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([group] = 'under25')</Filter>
-    <MarkersSymbolizer height="1" opacity="0.8" fill="#33aaff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1" fill="#33aaff" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([group] = 'under25')</Filter>
-    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#33aaff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.8" fill="#33aaff" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([group] = 'under25')</Filter>
-    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#33aaff" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.5" fill="#33aaff" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([group] = 'under25')</Filter>
-    <MarkersSymbolizer height="0.3" fill="#33aaff" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer height="0.3" fill="#33aaff" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([group] = 'under25')</Filter>
-    <MarkersSymbolizer height="0.2" fill="#33aaff" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer height="0.2" fill="#33aaff" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <Filter>([group] = 'under25')</Filter>
-    <MarkersSymbolizer fill="#33aaff" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer fill="#33aaff" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([group] = 'under18')</Filter>
-    <MarkersSymbolizer height="2" opacity="0.8" fill="#ee496c" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="2" fill="#ee496c" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([group] = 'under18')</Filter>
-    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#ee496c" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1.5" fill="#ee496c" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([group] = 'under18')</Filter>
-    <MarkersSymbolizer height="1" opacity="0.8" fill="#ee496c" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1" fill="#ee496c" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([group] = 'under18')</Filter>
-    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#ee496c" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.8" fill="#ee496c" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([group] = 'under18')</Filter>
-    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#ee496c" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.5" fill="#ee496c" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([group] = 'under18')</Filter>
-    <MarkersSymbolizer height="0.3" fill="#ee496c" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer height="0.3" fill="#ee496c" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([group] = 'under18')</Filter>
-    <MarkersSymbolizer height="0.2" fill="#ee496c" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer height="0.2" fill="#ee496c" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <Filter>([group] = 'under18')</Filter>
-    <MarkersSymbolizer fill="#ee496c" stroke-width="0" allow-overlap="true" opacity="1" />
+    <MarkersSymbolizer fill="#ee496c" opacity="0" stroke-width="0" allow-overlap="true" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <MarkersSymbolizer height="2" opacity="0.8" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="2" fill="#ff0000" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <MarkersSymbolizer height="1.5" opacity="0.8" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1.5" fill="#ff0000" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <MarkersSymbolizer height="1" opacity="0.8" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="1" fill="#ff0000" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <MarkersSymbolizer height="0.8" opacity="0.7" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.8" fill="#ff0000" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <MarkersSymbolizer height="0.5" opacity="0.7" fill="#ff0000" stroke-width="0" allow-overlap="true" />
+    <MarkersSymbolizer height="0.5" fill="#ff0000" stroke-width="0" allow-overlap="true" opacity="1" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>

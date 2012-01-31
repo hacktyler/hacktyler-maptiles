@@ -50,7 +50,7 @@
         "host": "localhost",
         "dbname": "tylercensus",
         "id": "tiger_lines",
-        "project": "tyler-census-age",
+        "project": "tyler-census-elderly",
         "srs": null
       }
     },

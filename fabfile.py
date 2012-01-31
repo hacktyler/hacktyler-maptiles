@@ -83,9 +83,10 @@ def _update_config_from_project():
     """
     Copy the latest configuration to TileMill from the local directory.
     """
+    path = os.path.expanduser('%(tilemill_projects)s/%(map)s/' % env)
     # Copy the latest configuration to TileMill
-    if not os.path.exists('%(tilemill_projects)s/%(map)s/' % env):
-        os.mkdir(os.path.expanduser('%(tilemill_projects)s/%(map)s/' % env))
+    if not os.path.exists(path):
+        os.mkdir(path)
 
     local('cp %(map)s/*.mss %(tilemill_projects)s/%(map)s/' % env)
     local('cp %(map)s/*.mml %(tilemill_projects)s/%(map)s/' % env)

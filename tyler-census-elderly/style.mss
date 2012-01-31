@@ -55,18 +55,18 @@ Map {
   marker-line-width:0;
   marker-allow-overlap: true;
   marker-opacity:1;
-  
-  [group='under18'] { marker-fill: #EE496C; } // pink
-  [group='under25'] { marker-fill: #33AAFF; } // blue
-  [group='under40'] { marker-fill: #836643; } // gold
-  [group='under65'] { marker-fill: #FFCF48; } // brown
+   
+  [group='under18'] { marker-fill: #EE496C; marker-opacity:0;} // pink
+  [group='under25'] { marker-fill: #33AAFF; marker-opacity:0;} // blue
+  [group='under40'] { marker-fill: #836643; marker-opacity:0;} // gold
+  [group='under65'] { marker-fill: #FFCF48; marker-opacity:0;} // brown
   [group='gte65'] { marker-fill: white; }
   
   [zoom=9] {marker-height:.2;}
   [zoom=10] {marker-height:.3;}
-  [zoom=11] {marker-height:.5; marker-opacity:.7;}
-  [zoom=12] {marker-height:.8; marker-opacity:.7;}
-  [zoom=13] {marker-height:1; marker-opacity:.8;}
-  [zoom=14] {marker-height:1.5; marker-opacity:.8;}
-  [zoom=15] {marker-height:2; marker-opacity:.8;}
+  [zoom=11] {marker-height:.5; }
+  [zoom=12] {marker-height:.8; }
+  [zoom=13] {marker-height:1; }
+  [zoom=14] {marker-height:1.5; }
+  [zoom=15] {marker-height:2; }
 }
