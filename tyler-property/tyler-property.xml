@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#333333">
+
+
+<Style name="taxnet" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 2000) and ([year_built] &lt; 2100)</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ffff33" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 2000) and ([year_built] &lt; 2100)</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ffff33" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 2000) and ([year_built] &lt; 2100)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ffff33" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 2000) and ([year_built] &lt; 2100)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ffff33" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 2000) and ([year_built] &lt; 2100)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ffff33" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 2000) and ([year_built] &lt; 2100)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ffff33" />
+  </Rule>
+  <Rule>
+    <Filter>([year_built] &gt;= 2000) and ([year_built] &lt; 2100)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ffff33" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1980) and ([year_built] &lt; 2000)</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ff7f00" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1980) and ([year_built] &lt; 2000)</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ff7f00" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1980) and ([year_built] &lt; 2000)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ff7f00" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1980) and ([year_built] &lt; 2000)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ff7f00" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1980) and ([year_built] &lt; 2000)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ff7f00" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1980) and ([year_built] &lt; 2000)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ff7f00" />
+  </Rule>
+  <Rule>
+    <Filter>([year_built] &gt;= 1980) and ([year_built] &lt; 2000)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#ff7f00" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1960) and ([year_built] &lt; 1980)</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#984ea3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1960) and ([year_built] &lt; 1980)</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#984ea3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1960) and ([year_built] &lt; 1980)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#984ea3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1960) and ([year_built] &lt; 1980)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#984ea3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1960) and ([year_built] &lt; 1980)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#984ea3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1960) and ([year_built] &lt; 1980)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#984ea3" />
+  </Rule>
+  <Rule>
+    <Filter>([year_built] &gt;= 1960) and ([year_built] &lt; 1980)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#984ea3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1940) and ([year_built] &lt; 1960)</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#4daf4a" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1940) and ([year_built] &lt; 1960)</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#4daf4a" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1940) and ([year_built] &lt; 1960)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#4daf4a" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1940) and ([year_built] &lt; 1960)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#4daf4a" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1940) and ([year_built] &lt; 1960)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#4daf4a" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1940) and ([year_built] &lt; 1960)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#4daf4a" />
+  </Rule>
+  <Rule>
+    <Filter>([year_built] &gt;= 1940) and ([year_built] &lt; 1960)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#4daf4a" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1920) and ([year_built] &lt; 1940)</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#377eb8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1920) and ([year_built] &lt; 1940)</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#377eb8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1920) and ([year_built] &lt; 1940)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#377eb8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1920) and ([year_built] &lt; 1940)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#377eb8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1920) and ([year_built] &lt; 1940)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#377eb8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1920) and ([year_built] &lt; 1940)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#377eb8" />
+  </Rule>
+  <Rule>
+    <Filter>([year_built] &gt;= 1920) and ([year_built] &lt; 1940)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#377eb8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1800) and ([year_built] &lt; 1920)</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#e41a1c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1800) and ([year_built] &lt; 1920)</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#e41a1c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1800) and ([year_built] &lt; 1920)</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#e41a1c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1800) and ([year_built] &lt; 1920)</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#e41a1c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1800) and ([year_built] &lt; 1920)</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#e41a1c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([year_built] &gt;= 1800) and ([year_built] &lt; 1920)</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#e41a1c" />
+  </Rule>
+  <Rule>
+    <Filter>([year_built] &gt;= 1800) and ([year_built] &lt; 1920)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#e41a1c" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#333333" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#333333" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#333333" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#333333" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#333333" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#333333" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <PolygonSymbolizer fill="#333333" />
+  </Rule>
+</Style>
+<Layer name="taxnet"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>taxnet</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="table"><![CDATA[taxnet_parcels]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="dbname"><![CDATA[tylerproperty]]></Parameter>
+       <Parameter name="id"><![CDATA[taxnet]]></Parameter>
+       <Parameter name="project"><![CDATA[tyler-property]]></Parameter>
+       <Parameter name="srs"><![CDATA[null]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="tiger_lines" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1200')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1200')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1200')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1200')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1200')</Filter>
+    <LineSymbolizer stroke-width="2.5" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1200')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([mtfcc] = 'S1200')</Filter>
+    <LineSymbolizer stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+</Style>
+<Layer name="tiger_lines"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>tiger_lines</StyleName>
+    <Datasource>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="table"><![CDATA[tiger_lines]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="dbname"><![CDATA[tylerproperty]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

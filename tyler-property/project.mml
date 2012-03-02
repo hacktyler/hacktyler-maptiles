@@ -1,0 +1,72 @@
+{
+  "bounds": [
+    -95.6236,
+    32.1128,
+    -94.9576,
+    32.711
+  ],
+  "center": [
+    -95.3002,
+    32.342,
+    12
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "taxnet",
+    "template_teaser": "{{{situs_address}}}<br />\n{{{legal_desc}}",
+    "fields": [
+      "situs_address",
+      "legal_desc"
+    ],
+    "template_full": ""
+  },
+  "minzoom": 12,
+  "maxzoom": 17,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "Datasource": {
+        "type": "postgis",
+        "table": "taxnet_parcels",
+        "extent": "",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "host": "localhost",
+        "dbname": "tylerproperty",
+        "id": "taxnet",
+        "project": "tyler-property",
+        "srs": null
+      },
+      "id": "taxnet",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "taxnet"
+    },
+    {
+      "geometry": "linestring",
+      "Datasource": {
+        "type": "postgis",
+        "table": "tiger_lines",
+        "extent": "",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "host": "localhost",
+        "dbname": "tylerproperty"
+      },
+      "id": "tiger_lines",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "tiger_lines"
+    }
+  ],
+  "name": "",
+  "description": "",
+  "legend": "",
+  "attribution": ""
+}
