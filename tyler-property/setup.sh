@@ -41,16 +41,22 @@ SELECT
     owner_zip,
     owner_zip_4,
     legal_desc,
+    acreage,
+    land_area,
     land_value::integer,
     improvement_value::integer,
     market_value::integer,
     assessed_value::integer,
     ag_use_value::integer,
+    confidential_owner,
+    non_res_owner,
     imprv_sptb,
     land_sptb,
     pers_sptb,
     prod_sptb,
     mnrl_sptb,
+    deed_month,
+    deed_year,
     year_built::integer
 FROM taxnet;
 "
@@ -60,7 +66,7 @@ CREATE_TAXNET_PARCELS="
 CREATE TABLE taxnet_parcels AS
 SELECT
     taxnet_simple.*,
-    zoned_parcels.wkb_geometry
+    zoned_parcels.wkb_geometry,
     zoned_parcels.zone
 FROM taxnet_simple, zoned_parcels
 WHERE taxnet_simple.geo_id = zoned_parcels.account;
@@ -137,7 +143,6 @@ NOT (
     owner_name LIKE '% CH' OR
     owner_name LIKE '% CHRCH' OR
     owner_name LIKE '% GOD' OR
-    owner_name LIKE '% BAPTIST' OR
     owner_name LIKE '% CHRIST' OR
     owner_name LIKE '% FELLOWSHIP' OR
     owner_name LIKE '% UNITED' OR
@@ -145,6 +150,13 @@ NOT (
     owner_name LIKE '% REFORMED' OR
     owner_name LIKE '% PENTECOSTAL %' OR
     owner_name LIKE '% ASAMBLEA %' OR
+    owner_name LIKE '%BAPTIST' OR
+	owner_name LIKE '%METHODIST%' OR
+	owner_name LIKE '%LUTHERAN%' OR
+	owner_name LIKE '%CATHOLIC%' OR
+	owner_name LIKE '%EPISCOPAL%' OR
+	owner_name LIKE '%NAZARENE%' OR
+	owner_name LIKE '%PRESBYTERIAN%' OR
     owner_name LIKE 'CONGREGATION %' OR
 
     -- Miscellaneous
@@ -176,21 +188,32 @@ SELECT * FROM taxnet_parcels
 WHERE NOT (${BIZ_FILTER_CLAUSE});"
 echo $CREATE_NON_BIZ_ONLY | psql -h $HOST -q $DATABASE
 
-CREATE_CHURCH_ONLY="CREATE TABLE church_only AS
+CREATE_CHURCH_ONLY="
+CREATE TABLE church_only AS
 SELECT owner_name FROM taxnet_parcels
 WHERE (
-	owner_name LIKE '% CHURCH' OR
-	owner_name LIKE '% CHURCH %' OR
+    owner_name LIKE '% CHURCH' OR
+    owner_name LIKE '% CHUR' OR
+    owner_name LIKE '% CHU' OR
+    owner_name LIKE '% CH' OR
+    owner_name LIKE '% CHRCH' OR
+    owner_name LIKE '% GOD' OR
+    owner_name LIKE '% CHRIST' OR
+    owner_name LIKE '% FELLOWSHIP' OR
+    owner_name LIKE '% UNITED' OR
+    owner_name LIKE '% TABERNACLE' OR
+    owner_name LIKE '% REFORMED' OR
+    owner_name LIKE '% PENTECOSTAL %' OR
+    owner_name LIKE '% ASAMBLEA %' OR
+    owner_name LIKE '%BAPTIST' OR
 	owner_name LIKE '%METHODIST%' OR
-	owner_name LIKE 'METHODIST%' OR
 	owner_name LIKE '%LUTHERAN%' OR
-	owner_name LIKE '%EPISCOPAL%' OR
-	owner_name LIKE '%BAPTIST%' OR
 	owner_name LIKE '%CATHOLIC%' OR
-	owner_name LIKE '% CHRIST' OR
-	owner_name LIKE '% CHRIST %' OR
+	owner_name LIKE '%EPISCOPAL%' OR
 	owner_name LIKE '%NAZARENE%' OR
-	owner_name LIKE '%PRESBYTERIAN%'
-);"
+	owner_name LIKE '%PRESBYTERIAN%' OR
+    owner_name LIKE 'CONGREGATION %'
+);
+"
 echo $CREATE_CHURCH_ONLY | psql -h $HOST -q $DATABASE
 
