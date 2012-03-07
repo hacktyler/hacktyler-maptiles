@@ -54,6 +54,34 @@
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1400')</Filter>
+    <LineSymbolizer stroke-width="0" stroke="#555555" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1400')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke="#555555" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1400')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#555555" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([mtfcc] = 'S1400')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#555555" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <Filter>([mtfcc] = 'S1400')</Filter>
+    <LineSymbolizer stroke="#555555" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([mtfcc] = 'S1200')</Filter>
     <LineSymbolizer stroke-width="0.5" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
@@ -74,18 +102,6 @@
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mtfcc] = 'S1200')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([mtfcc] = 'S1200')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([mtfcc] = 'S1200')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <Filter>([mtfcc] = 'S1200')</Filter>
