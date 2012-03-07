@@ -93,12 +93,19 @@ NOT (
     owner_name LIKE '% PARTNERS' OR
     owner_name LIKE '% LTD' OR
     owner_name LIKE '% TECH' OR
+    owner_name LIKE '% LTC' OR
+    owner_name LIKE '% FLP' OR
+    owner_name LIKE '% LIMITED%' OR
+    owner_name LIKE 'SOUTHERN TIER ROYAL CREST' OR
+    owner_name LIKE '%STATE FARM%' OR
+    owner_name LIKE '% CREDIT UNION%' OR
 
     -- Real Estate
     owner_name LIKE '% PROPERTIES' OR
     owner_name LIKE '% APARTMENTS%' OR
     owner_name LIKE '% APTS' OR
     owner_name LIKE '% DEVELOPMENT' OR
+    owner_name LIKE 'ATRIA WILLOW PARK' OR
 
     -- Organizations
     owner_name LIKE '% CLUB' OR
@@ -144,12 +151,13 @@ NOT (
     owner_name LIKE '% CHRCH' OR
     owner_name LIKE '% GOD' OR
     owner_name LIKE '% CHRIST' OR
-    owner_name LIKE '% FELLOWSHIP' OR
-    owner_name LIKE '% UNITED' OR
-    owner_name LIKE '% TABERNACLE' OR
-    owner_name LIKE '% REFORMED' OR
-    owner_name LIKE '% PENTECOSTAL %' OR
-    owner_name LIKE '% ASAMBLEA %' OR
+    owner_name LIKE '% FELLOWSHIP%' OR
+    owner_name LIKE '% UNITED%' OR
+    owner_name LIKE '% TABERNACLE%' OR
+    owner_name LIKE '% REFORMED%' OR
+    owner_name LIKE '% PENTECOSTAL%' OR
+    owner_name LIKE '% ASAMBLEA%' OR
+    owner_name LIKE '% TESTAMENTARY%' OR
     owner_name LIKE '%BAPTIST' OR
 	owner_name LIKE '%METHODIST%' OR
 	owner_name LIKE '%LUTHERAN%' OR

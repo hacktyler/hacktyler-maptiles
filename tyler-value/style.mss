@@ -6,14 +6,7 @@ Map {
   line-color: #777;
   line-join: round;
   line-cap: round;
-  /*polygon-fill: #333;*/
-  
-  [zoom=17] { line-width: 2.5; }
-  [zoom=16] { line-width: 2; }
-  [zoom=15] { line-width: 1.5; }
-  [zoom=14] { line-width: 1; }
-  [zoom=13] { line-width: 0.5; }
-  [zoom=12] { line-width: 0; }
+  line-width: 0;
 
   /*[assessed_value > 0] [assessed_value < 100000] { polygon-fill: #FFFFCC; } // red
   [assessed_value >= 100000] [assessed_value < 200000] { polygon-fill: #C7E9B4; } // blue
@@ -22,20 +15,17 @@ Map {
   [assessed_value >= 400000] [assessed_value < 500000] { polygon-fill: #2C7FB8; } // orange
   [assessed_value >= 500000] { polygon-fill: #253494; } // yellow*/
   
-  [assessed_value > 0] [assessed_value < 100000] { polygon-fill: #BD0026; }
-  [assessed_value >= 100000] [assessed_value < 200000] { polygon-fill: #F03B20; }
-  [assessed_value >= 200000] [assessed_value < 300000] { polygon-fill: #FD8D3C; }
-  [assessed_value >= 300000] [assessed_value < 400000] { polygon-fill: #FEB24C; }
-  [assessed_value >= 400000] [assessed_value < 500000] { polygon-fill: #FED976; }
-  [assessed_value >= 500000] { polygon-fill: #FFFFB2; }
-  
-  /*[owner_city != 'TYLER'] { polygon-fill: red; }*/
+  [assessed_value > 0] [assessed_value < 33999] { polygon-fill: #D01C8B; }
+  [assessed_value >= 33999] [assessed_value < 67215] { polygon-fill: #F1B6DA; }
+  [assessed_value >= 67215] [assessed_value < 105630] { polygon-fill: #F7F7F7; }
+  [assessed_value >= 105630] [assessed_value < 163964] { polygon-fill: #B8E186; }
+  [assessed_value >= 163964] { polygon-fill: #4DAC26; }
 }
 
 #tiger_lines {
   // secondary roads
   [mtfcc='S1200'] {
-    line-color: #ccc;
+    line-color: #888;
     line-join: round;
     line-cap: round;
     

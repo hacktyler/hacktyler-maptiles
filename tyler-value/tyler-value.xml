@@ -5,319 +5,32 @@
 
 <Style name="taxnet" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 400000) and ([assessed_value] &lt; 500000)</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fed976" />
+    <Filter>([assessed_value] &gt;= 105630) and ([assessed_value] &lt; 163964)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
+    <PolygonSymbolizer fill="#b8e186" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 400000) and ([assessed_value] &lt; 500000)</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fed976" />
+    <Filter>([assessed_value] &gt;= 67215) and ([assessed_value] &lt; 105630)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
+    <PolygonSymbolizer fill="#f7f7f7" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 400000) and ([assessed_value] &lt; 500000)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fed976" />
+    <Filter>([assessed_value] &gt;= 33999) and ([assessed_value] &lt; 67215)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
+    <PolygonSymbolizer fill="#f1b6da" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 400000) and ([assessed_value] &lt; 500000)</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fed976" />
+    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 33999)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
+    <PolygonSymbolizer fill="#d01c8b" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 400000) and ([assessed_value] &lt; 500000)</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fed976" />
+    <Filter>([assessed_value] &gt;= 163964)</Filter>
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
+    <PolygonSymbolizer fill="#4dac26" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 400000) and ([assessed_value] &lt; 500000)</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fed976" />
-  </Rule>
-  <Rule>
-    <Filter>([assessed_value] &gt;= 400000) and ([assessed_value] &lt; 500000)</Filter>
-    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fed976" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 300000) and ([assessed_value] &lt; 400000)</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#feb24c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 300000) and ([assessed_value] &lt; 400000)</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#feb24c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 300000) and ([assessed_value] &lt; 400000)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#feb24c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 300000) and ([assessed_value] &lt; 400000)</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#feb24c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 300000) and ([assessed_value] &lt; 400000)</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#feb24c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 300000) and ([assessed_value] &lt; 400000)</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#feb24c" />
-  </Rule>
-  <Rule>
-    <Filter>([assessed_value] &gt;= 300000) and ([assessed_value] &lt; 400000)</Filter>
-    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#feb24c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 200000) and ([assessed_value] &lt; 300000)</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fd8d3c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 200000) and ([assessed_value] &lt; 300000)</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fd8d3c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 200000) and ([assessed_value] &lt; 300000)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fd8d3c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 200000) and ([assessed_value] &lt; 300000)</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fd8d3c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 200000) and ([assessed_value] &lt; 300000)</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fd8d3c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 200000) and ([assessed_value] &lt; 300000)</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fd8d3c" />
-  </Rule>
-  <Rule>
-    <Filter>([assessed_value] &gt;= 200000) and ([assessed_value] &lt; 300000)</Filter>
-    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#fd8d3c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 100000) and ([assessed_value] &lt; 200000)</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#f03b20" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 100000) and ([assessed_value] &lt; 200000)</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#f03b20" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 100000) and ([assessed_value] &lt; 200000)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#f03b20" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 100000) and ([assessed_value] &lt; 200000)</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#f03b20" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 100000) and ([assessed_value] &lt; 200000)</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#f03b20" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 100000) and ([assessed_value] &lt; 200000)</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#f03b20" />
-  </Rule>
-  <Rule>
-    <Filter>([assessed_value] &gt;= 100000) and ([assessed_value] &lt; 200000)</Filter>
-    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#f03b20" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 100000)</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#bd0026" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 100000)</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#bd0026" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 100000)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#bd0026" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 100000)</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#bd0026" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 100000)</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#bd0026" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 100000)</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#bd0026" />
-  </Rule>
-  <Rule>
-    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 100000)</Filter>
-    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#bd0026" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 500000)</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#ffffb2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 500000)</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#ffffb2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 500000)</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#ffffb2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 500000)</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#ffffb2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 500000)</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#ffffb2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([assessed_value] &gt;= 500000)</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#ffffb2" />
-  </Rule>
-  <Rule>
-    <Filter>([assessed_value] &gt;= 500000)</Filter>
-    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-    <PolygonSymbolizer fill="#ffffb2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>12500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <MinScaleDenominator>5000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <MinScaleDenominator>2500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2.5" stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
   </Rule>
 </Style>
 <Layer name="taxnet"
@@ -342,41 +55,41 @@
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([mtfcc] = 'S1200')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.5" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([mtfcc] = 'S1200')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="1" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([mtfcc] = 'S1200')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="1.5" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([mtfcc] = 'S1200')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([mtfcc] = 'S1200')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2.5" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([mtfcc] = 'S1200')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <Filter>([mtfcc] = 'S1200')</Filter>
-    <LineSymbolizer stroke="#cccccc" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke="#888888" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
 <Layer name="tiger_lines"
