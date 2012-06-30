@@ -15,11 +15,11 @@ Map {
   [assessed_value >= 400000] [assessed_value < 500000] { polygon-fill: #2C7FB8; } // orange
   [assessed_value >= 500000] { polygon-fill: #253494; } // yellow*/
   
-  [assessed_value > 0] [assessed_value < 33999] { polygon-fill: #D01C8B; }
-  [assessed_value >= 33999] [assessed_value < 67215] { polygon-fill: #F1B6DA; }
-  [assessed_value >= 67215] [assessed_value < 105630] { polygon-fill: #F7F7F7; }
-  [assessed_value >= 105630] [assessed_value < 163964] { polygon-fill: #B8E186; }
-  [assessed_value >= 163964] { polygon-fill: #4DAC26; }
+  [assessed_value > 0] [assessed_value < 45841] { polygon-fill: #D01C8B; }
+  [assessed_value >= 45841] [assessed_value < 77831] { polygon-fill: #F1B6DA; }
+  [assessed_value >= 77831] [assessed_value < 114560] { polygon-fill: #F7F7F7; }
+  [assessed_value >= 114560] [assessed_value < 173640] { polygon-fill: #B8E186; }
+  [assessed_value >= 173640] { polygon-fill: #4DAC26; }
 }
 
 #tiger_lines {

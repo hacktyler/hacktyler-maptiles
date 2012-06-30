@@ -5,27 +5,27 @@
 
 <Style name="taxnet" filter-mode="first">
   <Rule>
-    <Filter>([assessed_value] &gt;= 105630) and ([assessed_value] &lt; 163964)</Filter>
+    <Filter>([assessed_value] &gt;= 114560) and ([assessed_value] &lt; 173640)</Filter>
     <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
     <PolygonSymbolizer fill="#b8e186" />
   </Rule>
   <Rule>
-    <Filter>([assessed_value] &gt;= 67215) and ([assessed_value] &lt; 105630)</Filter>
+    <Filter>([assessed_value] &gt;= 77831) and ([assessed_value] &lt; 114560)</Filter>
     <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
     <PolygonSymbolizer fill="#f7f7f7" />
   </Rule>
   <Rule>
-    <Filter>([assessed_value] &gt;= 33999) and ([assessed_value] &lt; 67215)</Filter>
+    <Filter>([assessed_value] &gt;= 45841) and ([assessed_value] &lt; 77831)</Filter>
     <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
     <PolygonSymbolizer fill="#f1b6da" />
   </Rule>
   <Rule>
-    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 33999)</Filter>
+    <Filter>([assessed_value] &gt; 0) and ([assessed_value] &lt; 45841)</Filter>
     <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
     <PolygonSymbolizer fill="#d01c8b" />
   </Rule>
   <Rule>
-    <Filter>([assessed_value] &gt;= 163964)</Filter>
+    <Filter>([assessed_value] &gt;= 173640)</Filter>
     <LineSymbolizer stroke="#777777" stroke-linejoin="round" stroke-linecap="round" stroke-width="0" />
     <PolygonSymbolizer fill="#4dac26" />
   </Rule>

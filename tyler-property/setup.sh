@@ -32,7 +32,17 @@ CREATE TABLE taxnet_simple AS
 SELECT
     geo_id,
     situs_address,
+    situs_num,
+    situs_number,
+    street_prefix,
+    situs_street,
+    street_type,
+    situs_city,
+    situs_state,
+    situs_zip,
+    situs_zip_4
     owner_name,
+    owner_care_of,
     owner_addr_1,
     owner_addr_2,
     owner_addr_3,
@@ -186,7 +196,8 @@ NOT (
 CREATE_NON_BIZ_ONLY="
 CREATE TABLE non_biz_only AS
 SELECT * FROM taxnet_parcels
-WHERE ${BIZ_FILTER_CLAUSE};
+WHERE ${BIZ_FILTER_CLAUSE}
+AND improvement_value != 0;
 "
 echo $CREATE_BIZ_ONLY | psql -h $HOST -q $DATABASE 
 
