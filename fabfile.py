@@ -107,6 +107,8 @@ def _rewrite_paths():
     with open('%(map)s/%(map)s.mml' % env, 'w') as f:
         f.write(contents)
 
+    local('rm %(map)s/project.mml' % env)
+
 def _carto_to_mapnik():
     """
     Convert carto styles to mapnik configuration.
