@@ -1,24 +1,27 @@
 {
   "bounds": [
-    -180,
-    -85.05112877980659,
-    180,
-    85.05112877980659
+    -95.5,
+    32.2,
+    -95.1,
+    32.5
   ],
   "center": [
-    -95.30178576707779,
-    32.34512215387928,
-    17
+    -95.31380206346452,
+    32.34004608305464,
+    14
   ],
   "format": "png",
   "interactivity": {
-    "layer": "interact",
-    "template_teaser": "[name]",
+    "layer": "",
+    "template_teaser": "{{{name}}}",
     "template_full": "",
-    "template_location": ""
+    "template_location": "",
+    "fields": [
+      "name"
+    ]
   },
-  "minzoom": 0,
-  "maxzoom": 22,
+  "minzoom": 12,
+  "maxzoom": 17,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss"
@@ -57,24 +60,6 @@
       }
     },
     {
-      "name": "interact",
-      "id": "interact",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "class": "",
-      "Datasource": {
-        "table": "interact",
-        "key_field": "",
-        "geometry_field": "",
-        "extent": "",
-        "type": "postgis",
-        "host": "localhost",
-        "user": "onyxfish",
-        "dbname": "hacktyler-urban",
-        "id": "interact",
-        "project": "tyler-urban"
-      }
-    },
-    {
       "name": "structures",
       "id": "structures",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -93,22 +78,25 @@
       }
     },
     {
-      "name": "tiger_lines",
-      "id": "tiger_lines",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "class": "",
+      "geometry": "linestring",
       "Datasource": {
-        "table": "tiger_lines",
+        "type": "postgis",
+        "table": "centerline",
+        "extent": "",
         "key_field": "",
         "geometry_field": "",
-        "extent": "",
-        "type": "postgis",
+        "dbname": "hacktyler-urban",
         "host": "localhost",
         "user": "onyxfish",
-        "dbname": "hacktyler-urban",
-        "id": "tiger_lines",
-        "project": "hacktyler-urban"
-      }
+        "id": "centerline",
+        "project": "tyler-urban",
+        "srs": null
+      },
+      "id": "centerline",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "centerline"
     },
     {
       "name": "sidewalks",
@@ -161,44 +149,70 @@
       }
     },
     {
-      "geometry": "point",
-      "name": "bus_stops",
-      "id": "bus_stops",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "class": "",
+      "geometry": "linestring",
       "Datasource": {
-        "table": "bus_stops",
-        "key_field": "",
-        "geometry_field": "",
-        "extent": "",
         "type": "postgis",
+        "table": "centerline_merged",
+        "extent": "",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "dbname": "hacktyler-urban",
         "host": "localhost",
         "user": "onyxfish",
-        "dbname": "hacktyler-urban",
-        "id": "bus_stops",
-        "project": "tyler-urban"
-      }
+        "id": "centerline_merged",
+        "project": "tyler-urban",
+        "srs": null
+      },
+      "id": "centerline_merged",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "centerline_merged"
     },
     {
-      "name": "tiger_lines_labels",
-      "id": "tiger_lines_labels",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "class": "",
+      "geometry": "point",
       "Datasource": {
-        "table": "tiger_lines",
-        "key_field": "",
-        "geometry_field": "",
-        "extent": "",
         "type": "postgis",
+        "table": "park_centroids",
+        "extent": "",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
         "dbname": "hacktyler-urban",
         "host": "localhost",
         "user": "onyxfish",
-        "id": "tiger_lines_labels",
-        "project": "tyler-urban"
-      }
+        "id": "park_centroids",
+        "project": "tyler-urban",
+        "srs": null
+      },
+      "id": "park_centroids",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "park_centroids"
+    },
+    {
+      "geometry": "point",
+      "Datasource": {
+        "type": "postgis",
+        "table": "school_centroids",
+        "extent": "",
+        "key_field": "",
+        "geometry_field": "wkb_geometry",
+        "dbname": "hacktyler-urban",
+        "host": "localhost",
+        "user": "onyxfish",
+        "id": "school_centroids",
+        "project": "tyler-urban",
+        "srs": null
+      },
+      "id": "school_centroids",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "name": "school_centroids"
     }
   ],
   "description": "",
   "attribution": "",
-  "legend": "Test\nTest"
+  "legend": ""
 }

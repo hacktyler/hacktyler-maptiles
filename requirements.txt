@@ -3,3 +3,4 @@ englewood
 mbutil==0.0.2
 pyyaml==3.10
 fabric==1.2.2
+lxml==2.3.4

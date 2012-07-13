@@ -2,6 +2,7 @@ import os
 import re
 
 from fabric.api import *
+from lxml import etree
 import yaml
 
 """
@@ -112,6 +113,13 @@ def _carto_to_mapnik():
     """
     # Convert tilemill config to mapnik config
     local('%(node_path)s %(tilemill_path)s/node_modules/carto/bin/carto %(map)s/%(map)s.mml > %(map)s/%(map)s.xml' % env)
+
+    # Rewrite xml to remove unsupported <Parameters>
+    doc = etree.parse('%(map)s/%(map)s.xml' % env)
+    root = doc.getroot()
+    tag = root.find('Parameters')
+    root.remove(tag)
+    doc.write('%(map)s/%(map)s.xml' % env)
 
     # Remove cruft
     local('rm -rf %(map)s/layers' % env)
